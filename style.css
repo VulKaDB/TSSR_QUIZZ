@@ -1,0 +1,31 @@
+:root{--b:#f4f6fa;--c:#fff;--t:#172033;--m:#697386;--l:#dce2ec;--a:#315efb}body.dark{--b:#101522;--c:#182033;--t:#f4f6ff;--m:#adb9d0;--l:#30405b;--a:#91a9ff}*{box-sizing:border-box}body{margin:0;background:var(--b);color:var(--t);font:17px system-ui}header{display:flex;gap:14px;align-items:center;padding:12px max(18px,calc((100% - 1000px)/2));background:var(--c);border-bottom:1px solid var(--l)}.brand{font-size:22px;font-weight:800;border:0;background:none;color:var(--t)}em{color:var(--a);font-style:normal}#count{margin-left:auto;color:var(--m)}button,input{font:inherit;color:var(--t);background:var(--c);border:1px solid var(--l);padding:12px;border-radius:12px}main{max-width:1000px;margin:auto;padding:28px 18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.tile,.panel{background:var(--c);border:1px solid var(--l);border-radius:16px;padding:20px}.tile{text-align:left}.tile:hover{border-color:var(--a)}.tile small{display:block;color:var(--m);margin-top:8px}.primary{background:var(--a);color:#fff;border:0;font-weight:700}.answers{display:grid;gap:10px;margin:18px 0}.ans{text-align:left}.chosen{outline:3px solid var(--a)}.feedback{margin-top:16px;padding:14px;border-left:6px solid #d94c5d;background:#eef1ff;border-radius:10px}.good{border-left-color:#18a66a}.memo li{margin:10px 0}
+
+/* Accueil : séparation et progression par catégorie */
+.section-separator{height:2px;width:100%;margin:38px 0 28px;background:var(--l);border-radius:999px}
+.category-tile{min-height:145px}
+.progress{height:10px;margin-top:15px;background:#e8ebf0;border-radius:999px;overflow:hidden;border:1px solid rgba(0,0,0,.04)}
+.progress span{display:block;height:100%;min-width:4px;border-radius:inherit;background:hsl(calc(var(--progress, 0) * 1.2),78%,45%);transition:width .35s ease,background .35s ease}
+body.dark .progress{background:#29354b}
+
+/* Zone de texte libre */
+.answers input[type=text]{width:100%;font-size:17px}
+
+/* Ligne de boutons Valider / Suivante */
+.actions{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+.actions button:disabled{opacity:.5;cursor:default}
+
+/* Tuiles à relier (match) */
+.match-grid{display:flex;flex-direction:column;gap:12px;margin:18px 0}
+.match-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.match-left{flex:1 1 220px;background:var(--b);border:1px solid var(--l);border-radius:10px;padding:10px 14px;font-weight:600}
+.match-sel{flex:1 1 220px}
+
+/* Remise en ordre (order) */
+.order-list{list-style:none;margin:18px 0;padding:0;display:flex;flex-direction:column;gap:10px}
+.order-list li{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--b);border:1px solid var(--l);border-radius:10px;padding:10px 14px}
+.order-btns button{padding:6px 10px;line-height:1}
+
+/* Calculs à plusieurs champs */
+.calc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 0}
+.calc-grid label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:15px;color:var(--m)}
+.calc-grid input{font-weight:400;color:var(--t)}
