@@ -4,7 +4,7 @@ Application web de révision pour le titre **TSSR**, sous forme de quiz interact
 
 ## Fonctionnalités
 
-- **276+ questions** réparties sur une douzaine de catégories (Linux, Windows Server & AD, Réseaux & IPv4, Ports & protocoles, Wi-Fi, Virtualisation & Cloud, Bash & PowerShell, Firewall/VPN & sécurité, Sauvegardes & restauration, Déploiement de postes, Binaire & logique, Support & méthodologie).
+- **250+ questions** réparties sur une douzaine de catégories (Linux, Windows Server & AD, Réseaux & IPv4, Ports & protocoles, Wi-Fi, Virtualisation & Cloud, Bash & PowerShell, Firewall/VPN & sécurité, Sauvegardes & restauration, Déploiement de postes, Binaire & logique, Support & méthodologie).
 - **7 types de questions** pour varier les formats de révision : QCM, mise en situation, réponse libre, tuiles à relier, remise en ordre, calcul à plusieurs champs, et exercices IP à tirage aléatoire (adresse et masque différents à chaque tentative, avec calcul détaillé).
 - **4 modes de révision** :
   - Révision libre (choix des catégories, ordre aléatoire)
